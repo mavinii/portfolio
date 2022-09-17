@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos Oliveira | Front-end Developer</title>
+    <meta name="description" content="Marcos Oliveira Full Stack Developer.">
+
+	<!-- Preload hero image -->
+    <link rel="preload" href="assets/img/code.png" as="image">
+
+	<!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/lunadoge.min.css" />
+    <link rel="stylesheet" href="assets/css/css-javascript.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6.1 icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet">
+
+    <style>
+        /* ============ Header Colours =============*/
+        header.hero-block-js { background-color: #f7df1e }
+        header.hero-block-js h1 { color: #222 }
+        header.hero-block-js h2 { color: var(--gray-700) }
+
+        /* Main Colours */
+        .theme-js { 
+            background-image:#ff0000;background-image:  
+            radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0, transparent 50%),  
+            radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0, transparent 50%),  
+            radial-gradient(at 0% 50%, hsla(355,85%,93%,1) 0, transparent 50%),  
+            radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0, transparent 50%),  
+            radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0, transparent 50%),  
+            radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0, transparent 50%),  
+            radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0, transparent 50%);
+        }
+
+        .theme-js .col-2 { background-color: var(--green-100) }
+        .theme-js h3 { color: #222 }
+        .theme-js p { color: #222 }
+
+        /* Button Colours: passive state */
+        .theme-js a.btn { 
+            color: #fff; background-color: blue; transition: 0.2s;
+            border-radius: 6px
+        }
+
+        /* Button Colours: active state */
+        .theme-js a.btn:hover { background-color: darkblue }
+
+        .theme-js a.btn { background-image: linear-gradient(to right,#e052a0,#f15c41) } 
+        .theme-js a.btn:hover { filter: brightness(140%) saturate(140%) } 
+
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics  -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQBCG8H32E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-XQBCG8H32E');
+    </script>
+
+    <!-- Privacy Link -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+</head>
+
+
+<body>
+
+    <!-- navigation menu -->
+    <nav class="container-menu menu-desktop menu-sticky">
+        <a href="#"><img src="assets/img/MarcosLogo.png" alt="website logo"></a>
+        <ul class="">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="../contact/index.html" id="btn-cta" class="btn-soft"><span>Contact</span></a></li>
+        </ul>
+        <div class="item-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+        
+    <!-- header hero block -->
+    <header class="hero-block hero-block-js">
+        <div class="hero-text-container">
+            <h1>JavaScript Projects</h1>
+            <h2>A selection of my recent JavaScript projects.</h2>
+            <img src="assets/img/code.png" alt="Sample JavaScript code">
+        </div>
+    </header>
+
+    <!-- main content with sections -->
+    <main>
+        
+        <section class="container-flex theme-js">
+
+            <div id="portfolio" class="col-2">                
+                <h3>Data Tables</h3>
+                <p>Populates an HTML table with data stored in an array. Includes the option to remove data items.</p>
+                
+                <div class="container-btn">
+                    <a href="assets/js/data-tables/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-2">                
+                <h3>Movies Listing</h3>                
+                <p>Uses the Fetch API to retrieve a searchable list of movie titles and images from the Internet Movie Database.</p>
+                
+                <div class="container-btn">
+                    <a href="assets/js/movies/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-2">                
+                <h3>Random Quotes Generator</h3>                
+                <p>Uses the Fetch API to retrieve a randomly-choosen selection of ten inspiring quotations.</p>
+                
+                <div class="container-btn">
+                    <a href="assets/js/quotes/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-2">                
+                <h3>Image Blue Filter</h3>                
+                <p>Uses CSS variables and HTML custom data attributes to adjust the filter blur property of an image.</p>
+                
+                <div class="container-btn">
+                    <a href="assets/js/image-blur-filter/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-2">                
+                <h3>Counter</h3>                
+                <p>An increment and decrement counter that changes the colour of the number displayed on the web page.</p>
+                
+                <div class="container-btn">
+                    <a href="./assets/js/counter/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-2">                
+                <h3>Tip Calculator</h3>                
+                <p>Calculates the tip for a restaurant bill based on the level of service and the number of customers.</p>
+                
+                <div class="container-btn">
+                    <a href="./assets/js/tip-calculator/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-2">                
+                <h3>Image Slideshow</h3>                
+                <p>A slideshow with an array of images from Dublin city, Ireland.</p>
+                
+                <div class="container-btn">
+                    <a href="./assets/js/image-slideshow/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-2">                
+                <h3>Random Colour Generator</h3>                
+                <p>Uses an array of hexadecimal values to randomly generate a background colour for the web page.</p>
+                
+                <div class="container-btn">
+                    <a href="assets/js/colours/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-2">
+                <h3>Weather for Dublin</h3>
+                <p>Uses the Fetch API to retrieve current weather information for the city of Dublin, Ireland.</p>
+                <div class="container-btn">
+                    <a href="../second-semester/assets/js/weather/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-2">                
+                <h3>Calculator with Modules</h3>                
+                <p>A basic calculator that uses export/import statements to share code with a JavaScript module file.</p>
+                
+                <div class="container-btn">
+                    <a href="assets/js/calculator-modules/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+        </section>        
+    </main>
+
+    
+    <!-- footer -->
+	<footer>
+		<h2>Marcos Oliveira</h2>
+		<h3>CONNECT</h3>
+
+		<ul class="footer-icons">
+			<li><a href="https://www.linkedin.com/in/pgmarcosoliveira" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+			<li><a href="https://github.com/mavinii" target="_blank"><i class="fab fa-github"></i></a></li>
+			<li><a href="https://unsplash.com/@pg_marcosoliveira" target="_blank"><i class="fas fa-camera"></i></a></li>
+            <li><a href="https://www.instagram.com/mavinii" target="_blank"><i class="fab fa-instagram"></i></a></li>
+		</ul>
+
+		<p class="privacy"><a href="../privacy.html">Privacy &amp; Legal</a></p>
+	</footer>
+
+    <!-- JavaScript menu -->
+    <script src="assets/js/menu.js"></script>
+
+    <!-- JavaScript Privacy -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+            "background": "#efefef",
+            "text": "#404040"
+            },
+            "button": {
+            "background": "#8ec760",
+            "text": "#ffffff"
+            }
+        },
+        "content": {
+            "href": "https://mavinii.github.io/marcosoliveira/privacy.html"
+        }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+

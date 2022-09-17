@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\1 Jan"
+		},
+		{
+			"path": "..\\..\\..\\..\\2 Feb"
+		},
+		{
+			"path": "..\\..\\.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "2 March"
+	}
+}

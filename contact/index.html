@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos Portfolio</title>
+    <meta name="description" content="Marcos Oliveira Full Stack Developer.">
+
+	<!-- Preload hero image -->
+
+	<!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/lunadoge.css"/>
+    <link rel="stylesheet" href="assets/css/custom.css"/>
+
+	<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+	<!-- Font Awesome 5 icons -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+
+    <!-- Light Awesome icons -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Google Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics  -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQBCG8H32E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-XQBCG8H32E');
+    </script>
+
+    <!-- Privacy Link -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+</head>
+
+<body>
+
+    <!-- Navigation menu -->
+    <nav class="container-menu menu-desktop menu-sticky">
+        <a href="../index.html"><img src="assets/img/MarcosLogo.png" alt="website logo"></a>
+        <ul>
+            <li><a href="../portfolio/index.html#about">About</a></li>
+            <li><a href="../portfolio/index.html#jobs">Jobs</a></li>
+        </ul>
+        <div class="item-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+
+    <!-- header hero block -->
+    <header class="hero-block hero-half half-img-right text-center-mobile">
+        <div class="col-2">
+            <div class="hero-text-container">
+                <h1>Contact us</h1>
+                <h2>We are here to answer your questions</h2>
+            </div>
+        </div>
+    
+        <div class="col-2">
+            <div class="hero-bg-media">
+                <figure><img src="assets/img/contact_image.svg" alt="contact image"></figure>
+            </div>
+        </div>    
+    </header>
+    <!-- / header hero Block -->
+
+    <!-- main content with sections -->
+    <main>
+
+        <section class="container-contact-form">
+            <!-- Contact form starts here -->
+            <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/f/xrgjqjvl"
+            method="POST">
+
+                <div class="contact-form-upper">
+                    <h2>Chat with me</h2>                 
+                    <p>It's available from 7am to midnight (Irish time), 7 days a week.</p>
+                </div>
+
+                <!-- Begin contact form fields -->
+                <div class="flex-row">
+                    <div class="item-name">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="name" id="full-name" placeholder="Your First and Last Name" required="">
+                    </div>
+                    <div class="item-email">
+                        <label for="email-address">Email</label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="example@example.com" required="">
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="item-textarea">
+                        <label for="message">Message</label>
+                        <textarea rows="5" name="message" id="message" placeholder="Your Message" required=""></textarea>
+                    </div>
+
+                    <div class="item-btn">
+                        <button id="btn-submit" type="submit" class="btn-soft"><span>Send</span><i class="fas fa-arrow-circle-right"></i></button> 
+                    </div>
+                </div>
+
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                <!-- End contact form fields -->
+
+            </form><!-- Contact form ends here -->
+        </section><!-- End container for contact form -->
+
+    </main>
+    
+    <!-- footer -->
+	<footer>
+		<h2>Marcos Oliveira</h2>
+		<h3>CONNECT</h3>
+
+		<ul class="footer-icons">
+			<li><a href="https://www.linkedin.com/in/pgmarcosoliveira" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+			<li><a href="https://github.com/mavinii" target="_blank"><i class="fab fa-github"></i></a></li>
+			<li><a href="https://unsplash.com/@pg_marcosoliveira" target="_blank"><i class="fas fa-camera"></i></a></li>
+            <li><a href="https://www.instagram.com/mavinii" target="_blank"><i class="fab fa-instagram"></i></a></li>
+		</ul>
+
+		<p class="privacy"><a href="../privacy.html">Privacy &amp; Legal</a></p>
+	</footer>
+   
+    <!-- JavaScript menu -->
+    <script src="assets/js/menu.js"></script>
+
+    <!-- JavaScript Privacy -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+            "background": "#efefef",
+            "text": "#404040"
+            },
+            "button": {
+            "background": "#8ec760",
+            "text": "#ffffff"
+            }
+        },
+        "content": {
+            "href": "https://mavinii.github.io/marcosoliveira/privacy.html"
+        }
+        });
+    </script>
+</body>
+</html>

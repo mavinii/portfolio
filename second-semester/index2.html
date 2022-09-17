@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos Oliveira | Front-end Developer</title>
+    <meta name="description" content="Marcos Oliveira Full Stack Developer.">
+
+	<!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/lunadoge.min.css" />
+    <link rel="stylesheet" href="assets/css/css-javascript.css" />
+
+    <style>
+
+        /* ============ Header Colours =============*/
+        header.hero-block-js { background-color: #f7df1e }
+        header.hero-block-js h1 { color: #222 }
+        header.hero-block-js h2 { color: var(--gray-700) }
+
+        /* Main Colours */
+        .theme-js { 
+            background-image:#ff0000;background-image:  
+            radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0, transparent 50%),  
+            radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0, transparent 50%),  
+            radial-gradient(at 0% 50%, hsla(355,85%,93%,1) 0, transparent 50%),  
+            radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0, transparent 50%),  
+            radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0, transparent 50%),  
+            radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0, transparent 50%),  
+            radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0, transparent 50%);
+        }
+
+        /* FLEX BOX FOR CREATING 4 BOX HERE */
+        .theme-js .col-4 { 
+            background-color: var(--green-100);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .theme-js h3 { color: #222 }
+        .theme-js p { color: #222 }
+
+        /* Button Colours: passive state */
+        .theme-js a.btn { 
+            color: #fff; background-color: blue; transition: 0.2s;
+            border-radius: 6px
+        }
+
+        /* Button Colours: active state */
+        .theme-js a.btn:hover { background-color: darkblue }
+
+        .theme-js a.btn { background-image: linear-gradient(to right,#e052a0,#f15c41) } 
+        .theme-js a.btn:hover { filter: brightness(140%) saturate(140%) } 
+
+    </style>
+
+	<!-- Font Awesome 6.1 icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+<body>
+
+    <!-- Navigation menu -->
+    <nav class="container-menu menu-desktop menu-sticky">
+        <a href="index.html"><img src="assets/img/MarcosLogo.png" alt="website logo"></a>
+        <ul>
+            <li><a href="contact/index.html">Contact</a></li>
+        </ul>
+        <div class="item-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+        
+    <!-- header hero block -->
+    <header class="hero-block hero-block-js">
+        <div class="hero-text-container">
+            <h1>JavaScript Projects</h1>
+            <h2>A selection of my recent JavaScript projects.</h2>
+            <img src="assets/img/code.png" alt="Sample JavaScript code">
+        </div>
+    </header>
+
+    <!-- main content with sections -->
+    <main>
+        
+        <section class="container-flex theme-js">
+            <!-- Data Tables Card -->
+            <div class="col-4">                
+                <h3>Data Tables</h3>                
+                <p>Populates an HTML table with data stored in an array. Includes the option to remove data items.</p>                
+                <div class="container-btn">
+                    <a href="assets/js/data-tables/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Movies Listing Card -->
+            <div class="col-4">                
+                <h3>Movies Listing</h3>                
+                <p>Uses the Fetch API to retrieve a searchable list of movie titles and images from the Internet Movie Database.</p>                
+                <div class="container-btn">
+                    <a href="assets/js/movies/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Random Quotes Generator Card -->
+            <div class="col-4">                
+                <h3>Random Quotes Generator</h3>                
+                <p>Uses the Fetch API to retrieve a randomly-choosen selection of ten inspiring quotations.</p>                
+                <div class="container-btn">
+                    <a href="assets/js/quotes/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Image Blue Filter Card -->
+            <div class="col-4">                
+                <h3>Image Blue Filter</h3>                
+                <p>Uses CSS variables and HTML custom data attributes to adjust the filter blur property of an image.</p>                
+                <div class="container-btn">
+                    <a href="assets/js/image-blur-filter/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Counter Card -->
+            <div class="col-4">                
+                <h3>Counter</h3>                
+                <p>An increment and decrement counter that changes the colour of the number displayed on the web page.</p>                
+                <div class="container-btn">
+                    <a href="./assets/js/counter/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Tip Calculator Card -->
+            <div class="col-4">                
+                <h3>Tip Calculator</h3>                
+                <p>Calculates the tip for a restaurant bill based on the level of service and the number of customers.</p>                
+                <div class="container-btn">
+                    <a href="./assets/js/tip-calculator/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Image Slideshow Card -->
+            <div class="col-4">                
+                <h3>Image Slideshow</h3>                
+                <p>A slideshow with an array of images from Dublin city, Ireland.</p>                
+                <div class="container-btn">
+                    <a href="./assets/js/image-slideshow/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Random Colour Generator Card -->
+            <div class="col-4">                
+                <h3>Random Colour Generator</h3>                
+                <p>Uses an array of hexadecimal values to randomly generate a background colour for the web page.</p>                
+                <div class="container-btn">
+                    <a href="assets/js/colours/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Weather for Dublin Card -->
+            <div class="col-4">
+                <h3>Weather for Dublin</h3>
+                <p>Uses the Fetch API to retrieve current weather information for the city of Dublin, Ireland.</p>
+                <div class="container-btn">
+                    <a href="../second-semester/assets/js/weather/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="col-4">
+                <h3>Card 2</h3>
+                <p>Uses the Fetch API to retrieve current weather information for the city of Dublin, Ireland.</p>
+                <div class="container-btn">
+                    <a href="#" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="col-4">
+                <h3>Card 3</h3>
+                <p>Uses the Fetch API to retrieve current weather information for the city of Dublin, Ireland.</p>
+                <div class="container-btn">
+                    <a href="#" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="col-4">
+                <h3>Card 4</h3>
+                <p>Uses the Fetch API to retrieve current weather information for the city of Dublin, Ireland.</p>
+                <div class="container-btn">
+                    <a href="#" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    
+    <!-- footer -->
+	<footer>
+		<h2>Marcos Oliveira</h2>
+		<h3>CONNECT</h3>
+
+		<ul class="footer-icons">
+			<li><a href="https://www.linkedin.com/in/pgmarcosoliveira" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+			<li><a href="https://github.com/mavinii" target="_blank"><i class="fab fa-github"></i></a></li>
+			<li><a href="https://unsplash.com/@pg_marcosoliveira" target="_blank"><i class="fas fa-camera"></i></a></li>
+            <li><a href="https://www.instagram.com/mavinii" target="_blank"><i class="fab fa-instagram"></i></a></li>
+		</ul>
+
+		<p class="privacy"><a href="../privacy.html">Privacy &amp; Legal</a></p>
+	</footer>
+
+    <script src="assets/js/menu.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
